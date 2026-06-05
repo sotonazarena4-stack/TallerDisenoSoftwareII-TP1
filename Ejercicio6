@@ -1,0 +1,30 @@
+namespace TP1_Ejercicios1
+{
+    internal class Program
+
+    {
+        //Escribe un programa que solicite al usuario ingresar el precio de un producto y el porcentaje de descuento.
+        //Calcula el precio final que deberá pagar el cliente.
+        //variables = precio y porcentaje del descuento
+        static void Main(string[] args)
+        {
+            double precio;
+            int porcentaje;
+
+
+            Console.WriteLine("Ingrese el precio del producto");
+            precio  = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese el valor por hora ");
+            porcentaje = Convert.ToInt32(Console.ReadLine());
+
+            //formula 
+
+            double descuento = precio * porcentaje / 100;
+
+            double precioFinal = precio - descuento;
+
+            Console.WriteLine("El precio con el descuento seria  : " + precioFinal);
+
+        }
+    }
+}
