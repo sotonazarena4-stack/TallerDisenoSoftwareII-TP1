@@ -1,0 +1,28 @@
+namespace TP1_Ejercicios1
+{
+    internal class Program
+
+    {
+        //Escribe un programa que solicite al usuario ingresar la cantidad de horas trabajadas y el valor que se paga por hora.
+        //Calcula el salario total y muestra el resultado en pantalla.
+        //variables = cantidaddehoras , valorxhora
+        static void Main(string[] args)
+        {
+            double cantidaddehoras;
+            double valorxhora;
+
+
+            Console.WriteLine("Ingrese las cantidad de horas realizadas");
+            cantidaddehoras  = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese el valor por hora ");
+            valorxhora = Convert.ToDouble(Console.ReadLine());
+
+            //formula , multiplicacion
+
+            double salario = (cantidaddehoras * valorxhora);
+
+            Console.WriteLine("Su sueldo es   : " + salario);
+
+        }
+    }
+}
