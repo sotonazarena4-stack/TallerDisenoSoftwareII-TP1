@@ -1,0 +1,29 @@
+namespace TP1_Ejercicios1
+{
+    internal class Program
+
+    {
+        // Un automóvil recorrió cierta distancia y utilizó una cantidad de combustible.
+
+        //Escribe un programa que solicite al usuario ingresar los kilómetros recorridos y los litros de combustible utilizados.Calcula el consumo promedio del vehículo.
+        //variables = distancia y litros
+        static void Main(string[] args)
+        {
+            double distancia;
+            double litros;
+
+
+            Console.WriteLine("Ingrese la distancia recorrida");
+            distancia  = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese la cantidad de litros ");
+            litros = Convert.ToDouble(Console.ReadLine());
+
+            //formula , la division de las dos variables 
+
+            double consumo = (distancia / litros );
+
+            Console.WriteLine("El consumo promedio de un vehiculo es  : " + consumo);
+
+        }
+    }
+}
