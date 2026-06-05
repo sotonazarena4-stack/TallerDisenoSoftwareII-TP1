@@ -1,0 +1,26 @@
+namespace TP1_Ejercicios1
+{
+    internal class Program
+
+    {
+        //Solicitar el precio de un producto y la cantidad que desea comprar.
+        //Luego calcular el costo total y mostrarlo
+        //variables = Precio del producto y cantidad 
+        static void Main(string[] args)
+        {
+            double precio;
+            int cantidad;
+            
+
+            Console.WriteLine("Ingrese el precio");
+            precio = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese la cantidad");
+            cantidad = Convert.ToInt32(Console.ReadLine());
+
+            double costoTotal = precio * cantidad;
+
+            Console.WriteLine("El costo total es:" + costoTotal);
+
+        }
+    }
+}
