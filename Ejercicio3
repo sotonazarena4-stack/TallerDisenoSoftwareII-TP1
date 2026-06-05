@@ -1,0 +1,28 @@
+namespace TP1_Ejercicios1
+{
+    internal class Program
+
+    {
+        //Escribe un programa que solicite al usuario ingresar la distancia recorrida (en kilómetros)
+        //y el tiempo empleado (en horas)
+        //variables = distancia y tiempo
+        static void Main(string[] args)
+        {
+            double distancia;
+            double tiempo;
+
+
+            Console.WriteLine("Ingrese la distancia");
+            distancia  = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese el tiempo");
+            tiempo= Convert.ToDouble(Console.ReadLine());
+
+            //nota : la formula del perimetro es, perimetro = 2 x (largo y ancho)
+
+            double velocidad = (distancia / tiempo);
+
+            Console.WriteLine("La velocidad del recoorido es  : " + velocidad);
+
+        }
+    }
+}
