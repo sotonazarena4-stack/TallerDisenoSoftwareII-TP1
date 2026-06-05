@@ -1,0 +1,35 @@
+namespace TP1_Ejercicios1
+{
+    internal class Program
+
+    {
+        //Cálculo del puntaje total En un juego se obtienen tres puntajes en diferentes niveles. Escribe un programa que solicite al usuario ingresar los tres puntajes obtenidos y
+        //calcule el puntaje total del jugador.
+        //variables = 3 variables de puntajes y el resultado
+        static void Main(string[] args)
+        {
+            int puntaje1;
+            int puntaje2;
+            int puntaje3;
+
+
+
+            Console.WriteLine("Ingre el primer puntaje");
+            puntaje1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingre el segundo puntaje");
+            puntaje2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingre el tercer puntaje");
+            puntaje3 = Convert.ToInt32(Console.ReadLine());
+
+
+            //formula , suma de las variables
+
+            int resultado = puntaje1 + puntaje2 + puntaje3;
+
+            
+
+            Console.WriteLine(" El puntajes total  es : " + resultado);
+
+        }
+    }
+}
